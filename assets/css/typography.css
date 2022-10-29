@@ -1,0 +1,17 @@
+h1 {
+  font-size: 2em;
+  font-family: "montserrat";
+}
+
+h2 {
+  font-size: 1.5em;
+  padding-bottom: 30px;
+  font-family: "montserrat";
+}
+
+p {
+  font-size: 1em;
+  padding-bottom: 30px;
+  line-height: 1.5em;
+  font-family: "montserrat";
+}
