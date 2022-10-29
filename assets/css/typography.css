@@ -1,12 +1,21 @@
 h1 {
   font-size: 2em;
   font-family: "montserrat";
+  font-weight: 700;
 }
 
 h2 {
   font-size: 1.5em;
+  padding: 60px 0;
+  font-family: "montserrat";
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5em;
   padding-bottom: 30px;
   font-family: "montserrat";
+  font-weight: 700;
 }
 
 p {
@@ -14,4 +23,12 @@ p {
   padding-bottom: 30px;
   line-height: 1.5em;
   font-family: "montserrat";
+  font-weight: 400;
+}
+
+.btn {
+  font-size: 1em;
+  font-family: "montserrat";
+  font-weight: 400;
+  text-transform: capitalize;
 }
