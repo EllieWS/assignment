@@ -1,7 +1,15 @@
+.navigation {
+  font-family: "montserrat";
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
 h1 {
   font-size: 2em;
   font-family: "lora";
   font-weight: 400;
+  color: #fff;
 }
 
 h2 {
