@@ -1,7 +1,16 @@
 main {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 60px auto;
+  display: grid;
+  justify-content: center;
+  gap: 150px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  justify-content: space-around;
 }
 
 .col-1 {

@@ -17,6 +17,19 @@ h2 {
   padding: 60px 0;
   font-family: "lora";
   font-weight: 400;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.list {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
 }
 
 h3 {

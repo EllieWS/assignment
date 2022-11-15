@@ -38,6 +38,7 @@ header {
   border: none;
   background-color: #2053ac;
   color: #fff;
+  justify-content: flex-end;
 }
 
 .container {
@@ -50,11 +51,11 @@ header {
   position: relative;
 } */
 
-.row::after {
+/* .row::after {
   content: "";
   display: block;
   clear: both;
-}
+} */
 
 .btn-2 {
   padding: 10px 30px;
@@ -66,4 +67,9 @@ header {
 .img {
   width: 50%;
   height: auto;
+}
+
+.info {
+  display: flex;
+  align-items: center;
 }
