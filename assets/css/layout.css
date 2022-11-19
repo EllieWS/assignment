@@ -10,7 +10,7 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .col-1 {

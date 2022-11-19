@@ -19,14 +19,19 @@ header {
   position: absolute;
   z-index: 1;
   width: 100%;
+  /* display: grid; */
+  display: flex;
+  /* grid-template-columns: 2fr 2fr 2fr; */
+  grid-auto-columns: auto;
+  grid-template-rows: 100px;
 }
 
-.navigation {
+/* .navigation {
   line-height: 100px;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-}
+} */
 
 .logo {
   width: 120px;
@@ -38,11 +43,7 @@ header {
   border: none;
   background-color: #2053ac;
   color: #fff;
-  justify-content: flex-end;
-}
-
-.container {
-  margin: 3%;
+  /* justify-content: flex-end; */
 }
 
 /* .about .navigation,
