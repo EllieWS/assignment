@@ -1,6 +1,7 @@
-main {
+.container {
   max-width: 1200px;
   margin: 60px auto;
+  padding: 0 100px;
   display: grid;
   justify-content: center;
   gap: 150px;
@@ -8,9 +9,16 @@ main {
 
 .row {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
+  gap: 40px;
+}
+
+.list {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .col-1 {
