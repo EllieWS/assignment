@@ -3,64 +3,94 @@ nav,
 a {
   font-size: 1em;
   line-height: 1.7em;
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform:first-letter: capitalize;
   font-weight: 400;
   color: #fff;
 }
 
 /* Hero style */
 h1 {
-  font-size: 2em;
-  font-family: "lora";
-  text-transform:first-letter: capitalize;
-  font-weight: 700;
+  font-size: 2.2em;
+  font-family: "lora", serif;
   font-weight: 400;
+  text-transform:first-letter: capitalize;
   color: #fff;
   margin-left: 30px;
 }
+.h1-bk {
+  font-size: 2.2em;
+  font-family: "lora", serif;
+  font-weight: 400;
+  text-transform:first-letter: capitalize;
+  color: #000;
+  width: 80%;
+}
 
 /* main stlye */
-
 h2 {
-  font-size: 1.5em;
-  font-family: "lora";
+  font-size: 1.7em;
+  font-family: "lora", serif;
   font-weight: 400;
   text-align: center;
   text-transform:first-letter: capitalize;
 }
 .h2-wht {
-  padding: 60px 0;
+  padding: 50px 0;
   color: #fff;
 }
 .h2-bk {
-  padding: 60px 0 20px 0;
+  padding: 50px 0 20px 0;
   background-color: #e6e5e1;
 }
 h3 {
   font-size: 1.5em;
   padding-bottom: 30px;
   line-height: 1.5em;
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   text-transform:first-letter: capitalize;
   font-weight: 700;
 }
-.body,
+.h3-stacked {
+  font-size: 1.5em;
+  padding: 30px 0;
+  line-height: 1.5em;
+  font-family: "lora", serif;
+  text-transform:first-letter: capitalize;
+  font-weight: 700;
+}
+p,
 .list {
   font-size: 0.9em;
-  padding-bottom: 30px;
   line-height: 1.7em;
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   text-transform:first-letter: capitalize;
   font-weight: 400;
 }
+p {
+  padding-bottom: 30px;
+}
+.p-large {
+font-size: large;
+font-family: "montserrat", sans-serif;
+text-transform:first-letter: capitalize;
+font-weight: 400;
+line-height: 1.4em;
+margin-left: 30px;
+width: 80%;
+}
 .list {
   color: #fff;
+  padding-bottom: 20px;
 }
 button {
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   text-transform: capitalize;
+}
+.link-bk{
+color: #377a8c;
+text-decoration: underline;
 }
 
 /* newsletter style  */
@@ -69,23 +99,23 @@ button {
   text-transform:first-letter: capitalize;
 }
 .p-small {
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   text-transform:first-letter: capitalize;
-
   font-size: small;
   text-align: center;
 }
 input {
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
 }
 
 /* footer style */
-.list-footer,
+.nav-footer,
 .p-footer {
   font-size: 0.9em;
   line-height: 1.7em;
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   text-transform: capitalize;
+  letter-spacing: 0.5px;
   color: #fff;
   font-weight: 300;
 }

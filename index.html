@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Assignment V2</title>
+    <title>Home</title>
   </head>
   <body>
     <div class="row-nav">
       <div class="col-6">
         <figure class="nav-group">
-        <img
+          <a href="./index.html"><img
         class="logo-nav"
         src="./assets/img/role_minded_logo_v1.png"
-        alt="logo"
+        alt="role-minded-logo"
       />
       <nav>
-        <a href="./index.html">home</a>
-        <a href="./about.html">about</a>
-        <a href="./contact.html">contact</a>
+        <a href="./courses.html">Courses</a>
+        <a href="./rates.html">Rates</a>
+        <a href="./contact.html">Contact</a>
       </nav>
       <i class="fa fa-bars fa-2x"></i>
       <button class="btn-1">get started</button>
@@ -40,7 +40,7 @@
     </div>
 
     <div class="row-callout">
-      <div class="col-6">
+      <div class="col-1">
         <h2 class="h2-wht">
           By 2025, half of all employees around the world will require
           reskilling
@@ -48,15 +48,15 @@
       </div>
     </div>
 
-    <div class="row-main-1">
+    <div class="main row-main-1">
         <div class="col-3">
           <h3>Improve your skills with role base training</h3>
-          <p class="body">
+          <p>
             When you have a new role in mind, look up the job title in our
             catalog of in demand jobs, select the skills you want to learn, and
             start watching.
           </p>
-          <button class="btn-2">learn more</button>
+          <button class="btn-2" onclick='a href="./courses.html"'>learn more</button>
         </div>
         <div class="col-3 improve-img">
           <img
@@ -66,7 +66,7 @@
       </div> 
     </div>
 
-      <div class="row-main-2">
+      <div class="main row-main-2">
         <div class="col-3 invest-img">
           <img
             src="https://picsum.photos/id/4/440/300"
@@ -75,21 +75,20 @@
         </div>
         <div class="col-3">
           <h3>Invest in your employees, invest in their career</h3>
-          <p class="body">
+          <p>
             Every company wants their employees to succeed in their role.
             However specific responsibilities for individual roles can vary from
             organization to organization. Select the role and unique skills
             applicable to your organization, and watch your employees succeed.
           </p>
-          <button class="btn-2">learn more</button>
+          <button class="btn-2" onclick='a href="./rates.html"'>learn more</button>
         </div>
       </div>
 
-
     <div class="row-roles">
-      <div class="col-6 roles">
+      <div class="col-4 roles">
         <h2 class="h2-wht">Skill enhancement classes for in demand roles</h2>
-        <div class="roles">
+        <figure class="roles">
          <div class="list">Product Manager</div>
          <div class="list">Product Owner</div>
          <div class="list">Project Manager</div>
@@ -102,14 +101,14 @@
          <div class="list">Salesforce Developer</div>
          <div class="list">Process/Workfolw Mapping</div>
          <div class="list">SEO Specialist</div>
-        </div>
+        </figure>
     </div>
     </div>
 
     <div class="row-newsletter">
-      <div class="col-6 newsletter">
-        <h2 class="h2-bk">Newsletter sign-up</h2>
-        <p class="body p-newsletter">
+      <div class="col-1 newsletter">
+        <h2 class="h2-bk h2-newsletter">Newsletter sign-up</h2>
+        <p class="p-newsletter">
           Sign up with your email address to receive news and updates.
         </p>
         <form action="/send">
@@ -125,15 +124,15 @@
     <div class="row-footer">
       <div class="col-6 footer">
         <footer>
-          <figure class="nav-footer">
-            <div class="list-footer">Blog</div>
-            <div class="list-footer">About</div>
-            <div class="list-footer">Contact</div>
-          </figure>
-          <img
+          <nav class="nav-footer">
+              <a href="./courses.html">Courses</a>
+              <a href="./rates.html">Rates</a>
+              <a href="./contact.html">Contact</a>
+            </nav>
+            <a href="./index.html"><img
             class="logo-footer"
             src="./assets/img/role_minded_logo_v1.png"
-            alt="logo"
+            alt="role-minded-logo"
           />
           <p class="p-footer">©2022 Role Minded</p>
         </footer>

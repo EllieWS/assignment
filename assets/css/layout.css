@@ -4,6 +4,11 @@
 
 .col-2 {
   grid-column: span 2;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
 }
 
 .col-3 {
