@@ -1,7 +1,6 @@
 /* navigation style */
 .row-nav {
   background-color: #001423;
-  grid-area: navigation;
 }
 .nav-group {
   height: 80px;
@@ -70,9 +69,6 @@ button {
 }
 
 /* Hero style */
-.row-hero {
-  grid-area: hero;
-}
 .hero {
   width: 100%;
   height: 400px;
@@ -80,7 +76,6 @@ button {
   background-repeat: no-repeat;
   object-fit: cover;
   position: relative;
-  grid-area: hero;
 }
 .hero-h1 {
   position: absolute;
@@ -96,76 +91,59 @@ button {
   height: 400px;
   display: grid;
   align-content: center;
-  grid-area: header;
   margin-left: 30px;
 }
 
 /* Callout style */
 .row-callout {
   background-color: #377a8c;
-  grid-area: callout;
 }
 
 /* main stlye */
+.col-3 {
+  width: 100%;
+  height: auto;
+}
 .main {
   max-width: 1200px;
   gap: 50px;
-}
-.row-main-1 {
-  display: flex;
-  margin: 60px auto;
-  padding: 0 100px;
-  grid-area: main-1;
-}
-.row-main-2 {
-  display: flex;
-  margin: 60px auto;
-  padding: 0 100px;
-  grid-area: main-2;
-}
-.row-main-3 {
-  padding: 0 60px;
-  padding-bottom: 60px;
-  grid-area: main-3;
 }
 .img-article {
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
-.improve-img,
-.invest-img {
+iframe {
   width: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 /* Roles style */
-.row-roles {
+.row-roles .roles {
   background-color: #377a8c;
-  grid-area: roles;
+  height: 100%;
 }
-.roles {
-  padding-bottom: 90px;
+.col-4 {
+  padding: 0 40px 20px 40px;
 }
-.list {
-  background-color: #377a8c;
-  float: left;
-  width: 25%;
+ul {
+  width: 100%;
+  height: auto;
   text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* newsletter style  */
-.row-newsletter {
-  grid-area: newsletter;
-}
-.newsletter {
+.row-newsletter .newsletter {
   background-color: #e6e5e1;
+  height: 100%;
   padding-bottom: 30px;
 }
 form {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 input {
   background-color: #fff;
@@ -209,7 +187,6 @@ input {
 .row-footer {
   width: 100%;
   background-color: #001423;
-  grid-area: footer;
   padding: 50px 0 30px 0;
 }
 footer {
@@ -228,44 +205,94 @@ footer {
 }
 
 /* Breakpoints */
-@media (min-width: 1000px) {
-  i {
+@media (min-width: 800px) {
+  #hamburger {
     display: none;
   }
-  body {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-areas:
-      "navigation navigation"
-      "hero hero"
-      "callout callout"
-      "header header"
-      "main-1"
-      "main-2"
-      "newsletter newsletter"
-      "more more"
-      "footer footer"; */
+  .row-main-1 {
+    display: flex;
+    margin: 60px auto;
+    padding: 0 100px;
+  }
+  .row-main-2 {
+    display: flex;
+    margin: 60px auto;
+    padding: 0 100px;
+  }
+  .improve-img,
+  .invest-img {
+    width: 100%;
+    height: auto;
+  }
+  .row-main-3 {
+    padding: 0 60px;
+    padding-bottom: 60px;
+  }
+  .col-2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+  .col-4 ul {
+    column-count: 4;
   }
 }
-@media (max-width: 1000px) {
-  a {
+@media (max-width: 800px) {
+  nav {
     display: none;
   }
   .btn-1 {
     display: none;
   }
-  body {
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
-    /* grid-template-areas:
-      "navigation"
-      "hero"
-      "callout"
-      "header"
-      "main-1"
-      "main-2"
-      "newsletter"
-      "more"
-      "footer"; */
+  .hero {
+    height: 300px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  .main {
+    gap: 0;
+  }
+  .row-main-1 {
+    margin: 60px auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .row-main-2 {
+    margin: 60px auto;
+    padding: 0 30px;
+  }
+  .improve-img,
+  .invest-img {
+    width: 100%;
+    height: auto;
+    padding: 30px 0 30px 0;
+  }
+  .row-main-3 {
+    padding: 0 30px;
+    padding-bottom: 60px;
+  }
+  .col-2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+  }
+  .list {
+    width: 100%;
+  }
+  form {
+    flex-direction: column;
+    align-items: center;
   }
 }
