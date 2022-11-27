@@ -4,22 +4,154 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./main.js" defer></script>
-    <link rel="stylesheet" href="./main.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-  />
-    <title>JavaScript</title>
+    <meta
+      name="keywords"
+      content="skill enhancement, career, courses, roles, education, training"
+    />
+    <meta
+      name="description"
+      content="Website about skill enhancement courses. Download our app to get started."
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Role Minded</title>
   </head>
   <body>
-    <label>
-      <h1>Christmas wish list</h1>
-      <figure>
-      <input type="text" placeholder="Item" data-input />
-    </label>
-    <button data-button onclick="add()"></i></i>Add</button>
-  </figure>
-  <ul data-list list-style-type="\2603";></ul>
+    <div class="row-nav">
+      <div class="col-6">
+        <figure class="nav-group">
+          <a href="./index.html"
+            ><img
+              class="logo-nav"
+              src="./assets/img/role_minded_logo_v1.png"
+              alt="role-minded-logo"
+          /></a>
+          <nav>
+            <a href="./courses.html">Courses</a>
+            <a href="./rates.html">Rates</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+          <i class="fa fa-bars fa-2x" id="hamburger"></i>
+          <button class="btn-1" onclick='location.href="./courses.html"'>
+            get started
+          </button>
+        </figure>
+      </div>
+    </div>
+
+    <div class="row-hero">
+      <div class="col-6 hero">
+        <img
+          class="hero"
+          src="./assets/img/pastel-rainbow.png"
+          alt="hero image"
+        />
+        <div class="hero-h1">
+          <h1>Skill enhancement courses to advance your career</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-callout">
+      <div class="col-1">
+        <h2 class="h2-wht">
+          By 2025, half of all employees around the world will require
+          reskilling
+        </h2>
+      </div>
+    </div>
+
+    <div class="col-6 main row-main-1">
+      <div class="col-3">
+        <h3>Improve your skills with role base training</h3>
+        <p>
+          When you have a new role in mind, look up the job title in our catalog
+          of in demand jobs, select the skills you want to learn, and start
+          watching.
+        </p>
+        <button class="btn-2" onclick='location.href="./courses.html"'>
+          learn more
+        </button>
+      </div>
+      <div class="col-3 improve-img">
+        <img
+          src="https://picsum.photos/id/1/440/300"
+          alt="person working on computer at a cafe"
+        />
+      </div>
+    </div>
+
+    <div class="main row-main-2">
+      <div class="col-3 invest-img">
+        <img
+          src="https://picsum.photos/id/4/440/300"
+          alt="person working on computer at a cafe"
+        />
+      </div>
+      <div class="col-3">
+        <h3>Invest in your employees, invest in their career</h3>
+        <p>
+          Every company wants their employees to succeed in their role. However
+          specific responsibilities for individual roles can vary from
+          organization to organization. Select the role and unique skills
+          applicable to your organization, and watch your employees succeed.
+        </p>
+        <button class="btn-2" onclick='location.href="./rates.html"'>
+          learn more
+        </button>
+      </div>
+    </div>
+
+    <div class="row-roles">
+      <div class="col-4 roles">
+        <h2 class="h2-wht">Skill enhancement classes for in demand roles</h2>
+        <ul class="roles">
+          <li class="list">Product Manager</li>
+          <li class="list">Product Owner</li>
+          <li class="list">Project Manager</li>
+          <li class="list">Full Stack Developer</li>
+          <li class="list">Backend Developer</li>
+          <li class="list">Fron End Developer</li>
+          <li class="list">Machine Learning Engineer</li>
+          <li class="list">Data Scientist</li>
+          <li class="list">Data Engineer</li>
+          <li class="list">Salesforce Developer</li>
+          <li class="list">Process/Workfolw Mapping</li>
+          <li class="list">SEO Specialist</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row-newsletter">
+      <div class="col-1 newsletter">
+        <h2 class="h2-bk h2-newsletter">Newsletter sign-up</h2>
+        <p class="p-newsletter">Sign up to receive news and updates.</p>
+        <form action="/send">
+          <input type="text" name="given-name" placeholder="First Name" />
+          <input type="text" name="surname" placeholder="Surname" />
+          <input type="email" name="email" placeholder="Email Address" />
+          <input class="submit" type="submit" value="Sign Up" />
+        </form>
+        <p class="p-small">We respect your privacy.</p>
+      </div>
+    </div>
+
+    <div class="row-footer">
+      <div class="col-6 footer">
+        <footer>
+          <nav class="nav-footer">
+            <a href="./courses.html">Courses</a>
+            <a href="./rates.html">Rates</a>
+            <a href="./contact.html">Contact</a>
+          </nav>
+          <a href="./index.html"
+            ><img
+              class="logo-footer"
+              src="./assets/img/role_minded_logo_v1.png"
+              alt="role-minded-logo"
+          /></a>
+          <p class="p-footer">©2022 Role Minded</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
